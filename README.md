@@ -99,32 +99,32 @@ sudo make clean
 
 Caption: Two containers are running under one supervisor process, proving concurrent supervision.
 ### 3.1 Multi-container supervision
-![Multi-container supervision](images/1%20os.jpeg)
+
 Caption: Two containers are running under one supervisor process, proving concurrent supervision.
 
 
 ### 3.2 Metadata tracking (`ps` output)
-![Metadata tracking](images/2%20os.jpeg)
+
 Caption: `engine ps` displays container metadata and state transitions maintained by the supervisor.
 
 ### 3.3 Bounded-buffer logging
-![Bounded-buffer logging](images/os33.png)
+
 Caption: `logs/alpha.log` contains captured stdout/stderr, proving log-path producer-consumer operation.
 
 ### 3.4 CLI and IPC
-![CLI and IPC](images/4%20os.jpeg)
+
 Caption: CLI command is sent over control IPC and supervisor returns response.
 
 ### 3.5 Soft-limit warning
-![Soft-limit warning](images/5%20os.jpeg)
+
 Caption: `dmesg` shows soft-limit warning when RSS crosses configured soft threshold.
 
 ### 3.6 Hard-limit enforcement
-![Hard-limit enforcement](images/5%20os.jpeg)
+
 Caption: `dmesg` shows hard-limit enforcement (SIGKILL) and supervisor metadata reflects forced termination.
 
 ### 3.7 Scheduling experiment
-![Scheduling experiment](images/6%20os.jpeg)
+
 Caption: Different scheduler configurations (`nice`) show measurable performance difference.
 Each screenshot includes a short caption describing what it proves.
 
